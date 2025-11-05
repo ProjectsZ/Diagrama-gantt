@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagrama de Gantt</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Diagrama de Gantt</h1>
+            <div class="controls">
+                <button id="zoomIn">Zoom +</button>
+                <button id="zoomOut">Zoom -</button>
+                <button id="resetZoom">Reset</button>
+            </div>
+        </header>
+        
+        <div class="gantt-container">
+            <div id="gantt-chart"></div>
+        </div>
+        
+        <div class="legend">
+            <h3>Leyenda</h3>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #4CAF50;"></span>
+                <span>Actividad</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color" style="background-color: #FF9800;"></span>
+                <span>Hito</span>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="dist/gantt.js"></script>
+</body>
+</html>
+

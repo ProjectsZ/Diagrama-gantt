@@ -1,0 +1,161 @@
+{
+  "proyecto": "Sistema de Extensión Universitaria FIIS",
+  "fechaInicio": "2025-10-01",
+  "fechaFin": "2025-12-12",
+  "actividades": [
+    {
+      "id": "1",
+      "nombre": "ETAPA 1: Gestión del Proyecto",
+      "fechaInicio": "2025-10-01",
+      "fechaFin": "2025-10-20",
+      "tipo": "actividad",
+      "progreso": 0,
+      "color": "#667eea",
+      "descripcion": "Planificación, alcance, calidad, riesgos y configuración.",
+      "rol": "Fred Pizarro",
+      "subactividades": [
+        { "id": "1.1", "nombre": "Plan de inicio del proyecto", "fechaInicio": "2025-10-01", "fechaFin": "2025-10-03", "tipo": "actividad", "progreso": 100, "rol": "Project Manager", "estado": "Done", "asignado": "Project Manager", "color": "#4CAF50" },
+        { "id": "1.2", "nombre": "Plan de gestión del alcance", "fechaInicio": "2025-10-03", "fechaFin": "2025-10-06", "tipo": "actividad", "progreso": 100, "rol": "Project Manager", "estado": "Done", "asignado": "Project Manager", "color": "#4CAF50" },
+        { "id": "1.3", "nombre": "Plan de cronograma", "fechaInicio": "2025-10-05", "fechaFin": "2025-10-10", "tipo": "actividad", "progreso": 75, "rol": "Project Manager", "estado": "In progress", "asignado": "Project Manager", "color": "#FF9800" },
+        { "id": "1.4", "nombre": "Plan de riesgos", "fechaInicio": "2025-10-08", "fechaFin": "2025-10-12", "tipo": "actividad", "progreso": 60, "rol": "Project Manager", "estado": "In progress", "asignado": "Project Manager", "color": "#FF9800" },
+        { "id": "1.5", "nombre": "Plan de comunicaciones", "fechaInicio": "2025-10-10", "fechaFin": "2025-10-14", "tipo": "actividad", "progreso": 50, "rol": "Juan Campos", "estado": "In progress", "asignado": "Juan Campos", "color": "#FF9800" },
+        { "id": "1.6", "nombre": "Plan de calidad", "fechaInicio": "2025-10-12", "fechaFin": "2025-10-17", "tipo": "actividad", "progreso": 40, "rol": "QA Team", "estado": "In progress", "asignado": "QA Team", "color": "#FF9800" },
+        { "id": "1.7", "nombre": "Gestión de configuración y cambios", "fechaInicio": "2025-10-15", "fechaFin": "2025-10-20", "tipo": "actividad", "progreso": 0, "rol": "Fred Pizarro", "estado": "Open", "asignado": "Fred Pizarro", "color": "#9E9E9E" }
+      ]
+    },
+    {
+      "id": "2",
+      "nombre": "ETAPA 2: Análisis y Diseño",
+      "fechaInicio": "2025-10-01",
+      "fechaFin": "2025-11-08",
+      "tipo": "actividad",
+      "progreso": 0,
+      "color": "#4DB6AC",
+      "descripcion": "Levantamiento de requisitos, diseño arquitectónico y prototipos UI.",
+      "rol": "Equipo de Análisis",
+      "subactividades": [
+        { "id": "2.1", "nombre": "Talleres de levantamiento", "fechaInicio": "2025-10-01", "fechaFin": "2025-10-10", "tipo": "actividad", "progreso": 80, "rol": "Analista de Negocio", "estado": "In progress", "asignado": "Analista de Negocio", "color": "#FF9800" },
+        { "id": "2.2", "nombre": "Matriz de requisitos funcionales", "fechaInicio": "2025-10-08", "fechaFin": "2025-10-15", "tipo": "actividad", "progreso": 60, "rol": "Analista de Negocio", "estado": "In progress", "asignado": "Analista de Negocio", "color": "#FF9800" },
+        { "id": "2.3", "nombre": "Requisitos no funcionales", "fechaInicio": "2025-10-10", "fechaFin": "2025-10-17", "tipo": "actividad", "progreso": 50, "rol": "QA / Arquitecto", "estado": "In progress", "asignado": "QA / Arquitecto", "color": "#FF9800" },
+        { "id": "2.4", "nombre": "Casos de uso por módulo", "fechaInicio": "2025-10-12", "fechaFin": "2025-10-20", "tipo": "actividad", "progreso": 40, "rol": "Analista", "estado": "In progress", "asignado": "Analista", "color": "#FF9800" },
+        { "id": "2.5", "nombre": "Prototipos de UI", "fechaInicio": "2025-10-17", "fechaFin": "2025-10-25", "tipo": "actividad", "progreso": 0, "rol": "UX/UI", "estado": "Open", "asignado": "UX/UI", "color": "#9E9E9E" },
+        { "id": "2.6", "nombre": "Validación con stakeholders", "fechaInicio": "2025-10-25", "fechaFin": "2025-10-28", "tipo": "actividad", "progreso": 0, "rol": "Project Manager", "estado": "Open", "asignado": "Project Manager", "color": "#9E9E9E" },
+        { "id": "2.7", "nombre": "Arquitectura de software", "fechaInicio": "2025-10-25", "fechaFin": "2025-11-02", "tipo": "actividad", "progreso": 30, "rol": "Arquitecto de Software", "estado": "In progress", "asignado": "Arquitecto de Software", "color": "#FF9800" },
+        { "id": "2.8", "nombre": "Modelo de datos ER", "fechaInicio": "2025-10-28", "fechaFin": "2025-11-05", "tipo": "actividad", "progreso": 20, "rol": "DBA", "estado": "In progress", "asignado": "DBA", "color": "#FF9800" },
+        { "id": "2.9", "nombre": "Seguridad y permisos", "fechaInicio": "2025-11-01", "fechaFin": "2025-11-08", "tipo": "actividad", "progreso": 0, "rol": "Especialista de Seguridad", "estado": "Open", "asignado": "Especialista de Seguridad", "color": "#9E9E9E" }
+      ]
+    },
+    {
+      "id": "3",
+      "nombre": "ETAPA 3: Desarrollo del Software",
+      "fechaInicio": "2025-11-01",
+      "fechaFin": "2025-12-12",
+      "tipo": "actividad",
+      "progreso": 0,
+      "color": "#2196F3",
+      "descripcion": "Desarrollo e integración de módulos principales (backend, frontend, seguridad y reportes).",
+      "rol": "Equipo de Desarrollo",
+      "subactividades": [
+        { "id": "3.1", "nombre": "Estructura del proyecto (backend/frontend)", "fechaInicio": "2025-11-01", "fechaFin": "2025-11-03", "tipo": "actividad", "progreso": 100, "rol": "DevOps / Fullstack", "estado": "Done", "asignado": "DevOps / Fullstack", "color": "#4CAF50" },
+        { "id": "3.2", "nombre": "Registro de alumnos (backend)", "fechaInicio": "2025-11-04", "fechaFin": "2025-11-08", "tipo": "actividad", "progreso": 80, "rol": "Backend Developer", "estado": "In progress", "asignado": "Backend Developer", "color": "#FF9800" },
+        { "id": "3.3", "nombre": "Registro de alumnos (frontend)", "fechaInicio": "2025-11-06", "fechaFin": "2025-11-10", "tipo": "actividad", "progreso": 60, "rol": "Frontend Developer", "estado": "In progress", "asignado": "Frontend Developer", "color": "#FF9800" },
+        { "id": "3.4", "nombre": "Asociación colegio-alumno", "fechaInicio": "2025-11-08", "fechaFin": "2025-11-11", "tipo": "actividad", "progreso": 50, "rol": "Fullstack Developer", "estado": "In progress", "asignado": "Fullstack Developer", "color": "#FF9800" },
+        { "id": "3.5", "nombre": "Gestión de carreras de interés", "fechaInicio": "2025-11-09", "fechaFin": "2025-11-12", "tipo": "actividad", "progreso": 0, "rol": "Fullstack Developer", "estado": "Open", "asignado": "Fullstack Developer", "color": "#9E9E9E" },
+        { "id": "3.6", "nombre": "Control de duplicados por DNI", "fechaInicio": "2025-11-10", "fechaFin": "2025-11-13", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.7", "nombre": "Ferias (backend)", "fechaInicio": "2025-11-11", "fechaFin": "2025-11-15", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.8", "nombre": "Ferias (frontend)", "fechaInicio": "2025-11-12", "fechaFin": "2025-11-16", "tipo": "actividad", "progreso": 0, "rol": "Frontend Developer", "estado": "Open", "asignado": "Frontend Developer", "color": "#9E9E9E" },
+        { "id": "3.9", "nombre": "Charlas (backend)", "fechaInicio": "2025-11-13", "fechaFin": "2025-11-17", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.10", "nombre": "Charlas (frontend)", "fechaInicio": "2025-11-14", "fechaFin": "2025-11-18", "tipo": "actividad", "progreso": 0, "rol": "Frontend Developer", "estado": "Open", "asignado": "Frontend Developer", "color": "#9E9E9E" },
+        { "id": "3.11", "nombre": "Pasantías (backend)", "fechaInicio": "2025-11-15", "fechaFin": "2025-11-19", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.12", "nombre": "Pasantías (frontend)", "fechaInicio": "2025-11-16", "fechaFin": "2025-11-20", "tipo": "actividad", "progreso": 0, "rol": "Frontend Developer", "estado": "Open", "asignado": "Frontend Developer", "color": "#9E9E9E" },
+        { "id": "3.13", "nombre": "Registro de visitas/coordinaciones (backend)", "fechaInicio": "2025-11-17", "fechaFin": "2025-11-21", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.14", "nombre": "Registro de visitas/coordinaciones (frontend)", "fechaInicio": "2025-11-18", "fechaFin": "2025-11-22", "tipo": "actividad", "progreso": 0, "rol": "Frontend Developer", "estado": "Open", "asignado": "Frontend Developer", "color": "#9E9E9E" },
+        { "id": "3.15", "nombre": "Gestión de plantillas y formularios", "fechaInicio": "2025-11-20", "fechaFin": "2025-11-24", "tipo": "actividad", "progreso": 0, "rol": "Fullstack Developer", "estado": "Open", "asignado": "Fullstack Developer", "color": "#9E9E9E" },
+        { "id": "3.16", "nombre": "Reportes por módulo con filtros", "fechaInicio": "2025-11-22", "fechaFin": "2025-11-26", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.17", "nombre": "Exportación PDF/Excel", "fechaInicio": "2025-11-24", "fechaFin": "2025-11-28", "tipo": "actividad", "progreso": 0, "rol": "Fullstack Developer", "estado": "Open", "asignado": "Fullstack Developer", "color": "#9E9E9E" },
+        { "id": "3.18", "nombre": "Dashboards (KPI)", "fechaInicio": "2025-11-26", "fechaFin": "2025-11-30", "tipo": "actividad", "progreso": 0, "rol": "Fullstack Developer", "estado": "Open", "asignado": "Fullstack Developer", "color": "#9E9E9E" },
+        { "id": "3.19", "nombre": "Reportes de seguimiento y KPIs", "fechaInicio": "2025-11-28", "fechaFin": "2025-12-02", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.20", "nombre": "Gestión de usuarios", "fechaInicio": "2025-12-01", "fechaFin": "2025-12-04", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.21", "nombre": "Control de acceso por roles", "fechaInicio": "2025-12-03", "fechaFin": "2025-12-07", "tipo": "actividad", "progreso": 0, "rol": "Fullstack Developer", "estado": "Open", "asignado": "Fullstack Developer", "color": "#9E9E9E" },
+        { "id": "3.22", "nombre": "Permisos asignados por módulo", "fechaInicio": "2025-12-06", "fechaFin": "2025-12-09", "tipo": "actividad", "progreso": 0, "rol": "Backend Developer", "estado": "Open", "asignado": "Backend Developer", "color": "#9E9E9E" },
+        { "id": "3.23", "nombre": "Auditoría y logs de seguridad", "fechaInicio": "2025-12-09", "fechaFin": "2025-12-12", "tipo": "actividad", "progreso": 0, "rol": "Especialista de Seguridad", "estado": "Planned", "asignado": "Especialista de Seguridad", "color": "#9E9E9E" }
+      ]
+    },
+    {
+      "id": "4",
+      "nombre": "ETAPA 4: Infraestructura",
+      "fechaInicio": "2025-11-01",
+      "fechaFin": "2025-11-20",
+      "tipo": "actividad",
+      "progreso": 0,
+      "color": "#26A69A",
+      "descripcion": "Configuración de entornos, base de datos, respaldos y plan de recuperación ante desastres.",
+      "rol": "DevOps / DBA",
+      "subactividades": [
+        { "id": "4.1", "nombre": "Ambiente de desarrollo", "fechaInicio": "2025-11-01", "fechaFin": "2025-11-03", "tipo": "actividad", "progreso": 100, "rol": "DevOps Engineer", "estado": "Done", "asignado": "DevOps Engineer", "color": "#4CAF50" },
+        { "id": "4.2", "nombre": "Ambiente de pruebas", "fechaInicio": "2025-11-03", "fechaFin": "2025-11-06", "tipo": "actividad", "progreso": 60, "rol": "DevOps Engineer", "estado": "In progress", "asignado": "DevOps Engineer", "color": "#FF9800" },
+        { "id": "4.3", "nombre": "Ambiente de producción", "fechaInicio": "2025-11-05", "fechaFin": "2025-11-08", "tipo": "actividad", "progreso": 40, "rol": "DevOps Engineer", "estado": "In progress", "asignado": "DevOps Engineer", "color": "#FF9800" },
+        { "id": "4.4", "nombre": "Implementación de base de datos", "fechaInicio": "2025-11-06", "fechaFin": "2025-11-10", "tipo": "actividad", "progreso": 30, "rol": "DBA / Backend", "estado": "In progress", "asignado": "DBA / Backend", "color": "#FF9800" },
+        { "id": "4.5", "nombre": "Respaldos automáticos", "fechaInicio": "2025-11-09", "fechaFin": "2025-11-12", "tipo": "actividad", "progreso": 0, "rol": "DBA", "estado": "Open", "asignado": "DBA", "color": "#9E9E9E" },
+        { "id": "4.6", "nombre": "Plan de copias de respaldo", "fechaInicio": "2025-11-12", "fechaFin": "2025-11-16", "tipo": "actividad", "progreso": 0, "rol": "DBA / DevOps", "estado": "Open", "asignado": "DBA / DevOps", "color": "#9E9E9E" },
+        { "id": "4.7", "nombre": "DPR (Recuperación ante desastres)", "fechaInicio": "2025-11-16", "fechaFin": "2025-11-20", "tipo": "actividad", "progreso": 0, "rol": "DevOps / DBA", "estado": "Planned", "asignado": "DevOps / DBA", "color": "#9E9E9E" }
+      ]
+    },
+    {
+      "id": "5",
+      "nombre": "ETAPA 5: Testing y Calidad",
+      "fechaInicio": "2025-11-01",
+      "fechaFin": "2025-11-20",
+      "tipo": "actividad",
+      "progreso": 0,
+      "color": "#FFC107",
+      "descripcion": "Pruebas funcionales, de rendimiento, seguridad y generación de evidencias QA.",
+      "rol": "Equipo QA / Desarrolladores",
+      "subactividades": [
+        { "id": "5.1", "nombre": "Pruebas unitarias backend", "fechaInicio": "2025-11-01", "fechaFin": "2025-11-05", "tipo": "actividad", "progreso": 70, "rol": "QA Backend", "estado": "In progress", "asignado": "QA Backend", "color": "#FF9800" },
+        { "id": "5.2", "nombre": "Pruebas unitarias frontend", "fechaInicio": "2025-11-03", "fechaFin": "2025-11-07", "tipo": "actividad", "progreso": 50, "rol": "QA Frontend", "estado": "In progress", "asignado": "QA Frontend", "color": "#FF9800" },
+        { "id": "5.3", "nombre": "Pruebas de integración", "fechaInicio": "2025-11-07", "fechaFin": "2025-11-10", "tipo": "actividad", "progreso": 0, "rol": "QA / Fullstack", "estado": "Open", "asignado": "QA / Fullstack", "color": "#9E9E9E" },
+        { "id": "5.4", "nombre": "Pruebas de rendimiento", "fechaInicio": "2025-11-10", "fechaFin": "2025-11-14", "tipo": "actividad", "progreso": 0, "rol": "QA Performance", "estado": "Open", "asignado": "QA Performance", "color": "#9E9E9E" },
+        { "id": "5.5", "nombre": "Pruebas de seguridad (OWASP)", "fechaInicio": "2025-11-13", "fechaFin": "2025-11-17", "tipo": "actividad", "progreso": 0, "rol": "Especialista de Seguridad", "estado": "Open", "asignado": "Especialista de Seguridad", "color": "#9E9E9E" },
+        { "id": "5.6", "nombre": "Evidencias y reporte QA", "fechaInicio": "2025-11-17", "fechaFin": "2025-11-20", "tipo": "actividad", "progreso": 0, "rol": "QA Lead", "estado": "Planned", "asignado": "QA Lead", "color": "#9E9E9E" }
+      ]
+    },
+    {
+      "id": "6",
+      "nombre": "ETAPA 6: Capacitación y Soporte",
+      "fechaInicio": "2025-11-20",
+      "fechaFin": "2025-12-06",
+      "tipo": "actividad",
+      "progreso": 0,
+      "color": "#8BC34A",
+      "descripcion": "Capacitación a usuarios finales y administradores, validación de procesos y documentación funcional.",
+      "rol": "Instructor / QA / Project Manager",
+      "subactividades": [
+        { "id": "6.1", "nombre": "Manuales por rol", "fechaInicio": "2025-11-20", "fechaFin": "2025-11-25", "tipo": "actividad", "progreso": 40, "rol": "Instructional Designer", "estado": "In progress", "asignado": "Instructional Designer", "color": "#FF9800" },
+        { "id": "6.2", "nombre": "Videos tutoriales", "fechaInicio": "2025-11-23", "fechaFin": "2025-11-27", "tipo": "actividad", "progreso": 0, "rol": "Instructional Designer", "estado": "Open", "asignado": "Instructional Designer", "color": "#9E9E9E" },
+        { "id": "6.3", "nombre": "Guías rápidas", "fechaInicio": "2025-11-25", "fechaFin": "2025-11-29", "tipo": "actividad", "progreso": 0, "rol": "QA / Documentation Team", "estado": "Open", "asignado": "QA / Documentation Team", "color": "#9E9E9E" },
+        { "id": "6.4", "nombre": "Validación de procesos", "fechaInicio": "2025-11-28", "fechaFin": "2025-12-02", "tipo": "actividad", "progreso": 0, "rol": "QA / Project Manager", "estado": "Open", "asignado": "QA / Project Manager", "color": "#9E9E9E" },
+        { "id": "6.5", "nombre": "Capacitación a administradores", "fechaInicio": "2025-12-02", "fechaFin": "2025-12-06", "tipo": "actividad", "progreso": 0, "rol": "Instructor / QA", "estado": "Planned", "asignado": "Instructor / QA", "color": "#9E9E9E" }
+      ]
+    },
+    {
+      "id": "7",
+      "nombre": "ETAPA 7: Operación y Mantenimiento",
+      "fechaInicio": "2025-12-01",
+      "fechaFin": "2025-12-12",
+      "tipo": "actividad",
+      "progreso": 0,
+      "color": "#9E9E9E",
+      "descripcion": "Puesta en marcha del sistema, soporte durante eventos, resolución de incidencias y optimización final.",
+      "rol": "DevOps / Soporte / Product Owner",
+      "subactividades": [
+        { "id": "7.1", "nombre": "Mesa de ayuda", "fechaInicio": "2025-12-01", "fechaFin": "2025-12-03", "tipo": "actividad", "progreso": 0, "rol": "Soporte Nivel 1", "estado": "Planned", "asignado": "Soporte Nivel 1", "color": "#9E9E9E" },
+        { "id": "7.2", "nombre": "Soporte durante eventos", "fechaInicio": "2025-12-03", "fechaFin": "2025-12-05", "tipo": "actividad", "progreso": 0, "rol": "Soporte Nivel 2", "estado": "Planned", "asignado": "Soporte Nivel 2", "color": "#9E9E9E" },
+        { "id": "7.3", "nombre": "Resolución de incidencias", "fechaInicio": "2025-12-04", "fechaFin": "2025-12-08", "tipo": "actividad", "progreso": 0, "rol": "Soporte / Desarrollo", "estado": "Planned", "asignado": "Soporte / Desarrollo", "color": "#9E9E9E" },
+        { "id": "7.4", "nombre": "Actualizaciones y parches", "fechaInicio": "2025-12-06", "fechaFin": "2025-12-09", "tipo": "actividad", "progreso": 0, "rol": "DevOps / Backend", "estado": "Planned", "asignado": "DevOps / Backend", "color": "#9E9E9E" },
+        { "id": "7.5", "nombre": "Optimización de rendimiento", "fechaInicio": "2025-12-08", "fechaFin": "2025-12-10", "tipo": "actividad", "progreso": 0, "rol": "DBA / Backend", "estado": "Planned", "asignado": "DBA / Backend", "color": "#9E9E9E" },
+        { "id": "7.6", "nombre": "Evolución funcional", "fechaInicio": "2025-12-10", "fechaFin": "2025-12-12", "tipo": "actividad", "progreso": 0, "rol": "Product Owner / Project Manager", "estado": "Planned", "asignado": "Product Owner / Project Manager", "color": "#9E9E9E" }
+      ]
+    }
+  ]
+}

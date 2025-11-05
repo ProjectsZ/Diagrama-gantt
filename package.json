@@ -1,0 +1,16 @@
+{
+  "name": "diagrama-gantt",
+  "version": "1.0.0",
+  "description": "Diagrama de Gantt interactivo con TypeScript",
+  "main": "index.html",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "serve": "npx http-server . -p 8080"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.0"
+  }
+}
+
