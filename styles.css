@@ -269,7 +269,7 @@ header h1 {
 
 .gantt-row[data-level="1"] .gantt-row-title,
 .gantt-row[data-level="2"] .gantt-row-title {
-    font-size: 13px;
+    font-size: 10px;
     color: #6c757d;
 }
 
