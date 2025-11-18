@@ -1,30 +1,9 @@
-type Estado = 'Done' | 'In progress' | 'Open' | 'Planned';
+import { DateFormat } from "./class/date-format";
+import { Actividad, Estado, ProyectoData } from "./model/Actividad.model";
 
-interface Actividad {
-    id: string;
-    nombre: string;
-    fechaInicio: string;
-    fechaFin: string;
-    tipo: 'actividad' | 'hito';
-    progreso: number;
-    rol: string;
-    color: string;
-    descripcion?: string;
-    subactividades?: Actividad[];
-    nivel?: number; // Para indentación (0 = padre, 1+ = hijo)
-    estado?: Estado; // Estado de la tarea
-    asignado?: string; // Nombre del asignado
-    avatar?: string; // Iniciales para avatar
-}
-
-interface ProyectoData {
-    proyecto: string;
-    fechaInicio: string;
-    fechaFin: string;
-    actividades: Actividad[];
-}
 
 class GanttChart {
+
     private container: HTMLElement;
     private data: ProyectoData;
     private cellWidth: number = 50; // Ancho de cada celda (día)
@@ -36,6 +15,8 @@ class GanttChart {
     private expandedActivities: Set<string> = new Set(); // IDs de actividades expandidas
     private flatActivities: Actividad[] = []; // Lista plana de actividades para renderizar
     private today: Date = new Date(); // Fecha de hoy
+
+    private dateFormat: DateFormat = new DateFormat();
 
     constructor(containerId: string, data: ProyectoData) {
         this.container = document.getElementById(containerId)!;
@@ -114,24 +95,7 @@ class GanttChart {
         });
     }
 
-    private getDaysBetween(start: Date, end: Date): number {
-        const diffTime = Math.abs(end.getTime() - start.getTime());
-        return Math.ceil(diffTime / (1000 * 60 * 60 * 24));
-    }
-
-    private getDayIndex(date: Date): number {
-        const startTime = this.minDate.getTime();
-        const dateTime = date.getTime();
-        return Math.floor((dateTime - startTime) / (1000 * 60 * 60 * 24));
-    }
-
-    private formatDate(date: Date): string {
-        return date.toLocaleDateString('es-ES', { day: '2-digit', month: 'short' });
-    }
-
-    private formatMonth(date: Date): string {
-        return date.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
-    }
+    
 
     private render(): void {
         this.container.innerHTML = '';
@@ -160,17 +124,17 @@ class GanttChart {
         
         const taskNameHeader = document.createElement('div');
         taskNameHeader.className = 'gantt-sidebar-header';
-        taskNameHeader.textContent = 'Task name';
+        taskNameHeader.textContent = 'Nombre de la actividad';
         sidebar.appendChild(taskNameHeader);
         
         const statusHeader = document.createElement('div');
         statusHeader.className = 'gantt-sidebar-header';
-        statusHeader.textContent = 'Status';
+        statusHeader.textContent = 'Estado';
         sidebar.appendChild(statusHeader);
         
         const assignedHeader = document.createElement('div');
         assignedHeader.className = 'gantt-sidebar-header';
-        assignedHeader.textContent = 'Assigned';
+        assignedHeader.textContent = 'Asignado/Rol';
         sidebar.appendChild(assignedHeader);
         
         header.appendChild(sidebar);
@@ -186,7 +150,7 @@ class GanttChart {
         let monthContainer: HTMLElement | null = null;
         
         this.days.forEach((day, index) => {
-            const month = this.formatMonth(day);
+            const month = this.dateFormat.formatMonth(day);
             const isNewMonth = month !== currentMonth;
             
             if (isNewMonth || index === 0) {
@@ -358,7 +322,7 @@ class GanttChart {
     }
 
     private createTodayMarker(container: HTMLElement): void {
-        const todayIndex = this.getDayIndex(this.today);
+        const todayIndex = this.dateFormat.getDayIndex(this.minDate, this.today);
         if (todayIndex >= 0 && todayIndex < this.days.length) {
             const marker = document.createElement('div');
             marker.className = 'gantt-today-marker';
@@ -413,8 +377,8 @@ class GanttChart {
         // Calcular fechas (puede ser desde subactividades o directas)
         const { startDate, endDate } = this.calculateActivityDates(actividad);
         
-        const startIndex = this.getDayIndex(startDate);
-        const daysDuration = this.getDaysBetween(startDate, endDate) + 1;
+        const startIndex = this.dateFormat.getDayIndex(this.minDate,startDate);
+        const daysDuration = this.dateFormat.getDaysBetween(startDate, endDate) + 1;
         
         const left = startIndex * this.cellWidth * this.zoomLevel;
         const width = daysDuration * this.cellWidth * this.zoomLevel;
@@ -558,8 +522,8 @@ class GanttChart {
         this.tooltip.innerHTML = `
             <strong>${actividad.nombre}</strong><br>
             Rol: ${actividad.rol}<br>
-            Inicio: ${this.formatDate(new Date(actividad.fechaInicio))}<br>
-            Fin: ${this.formatDate(new Date(actividad.fechaFin))}<br>
+            Inicio: ${this.dateFormat.formatDate(new Date(actividad.fechaInicio))}<br>
+            Fin: ${this.dateFormat.formatDate(new Date(actividad.fechaFin))}<br>
             Progreso: ${actividad.progreso}%<br>
             ${actividad.descripcion ? `<br>${actividad.descripcion}` : ''}
         `;
