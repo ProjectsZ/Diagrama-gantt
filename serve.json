@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    {
+      "source": "/dist/class/date-format",
+      "destination": "/dist/class/date-format.js"
+    },
+    {
+      "source": "/dist/model/Actividad.model",
+      "destination": "/dist/model/Actividad.model.js"
+    }
+  ]
+}
+

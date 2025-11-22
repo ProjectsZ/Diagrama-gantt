@@ -1,5 +1,5 @@
-import { DateFormat } from "./class/date-format";
-import { Actividad, Estado, ProyectoData } from "./model/Actividad.model";
+import { DateFormat } from "./class/date-format.js";
+import { Actividad, Estado, ProyectoData } from "./model/Actividad.model.js";
 
 
 class GanttChart {

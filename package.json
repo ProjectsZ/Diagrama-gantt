@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc --watch",
-    "serve": "npx http-server . -p 8080"
+    "serve": "npx serve . -l 8080"
   },
   "devDependencies": {
     "typescript": "^5.3.3",
