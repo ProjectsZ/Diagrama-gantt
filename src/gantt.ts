@@ -149,10 +149,21 @@ class GanttChart {
         statusHeader.textContent = 'Estado';
         sidebar.appendChild(statusHeader);
 
+        const datesHeader = document.createElement('div');
+        datesHeader.className = 'gantt-sidebar-header fecha';
+        datesHeader.textContent = 'Fecha-inicio';
+        sidebar.appendChild(datesHeader);
+
+        const datesHeader2 = document.createElement('div');
+        datesHeader2.className = 'gantt-sidebar-header fecha';
+        datesHeader2.textContent = 'Fecha-fin';
+        sidebar.appendChild(datesHeader2);
+
         const assignedHeader = document.createElement('div');
         assignedHeader.className = 'gantt-sidebar-header';
         assignedHeader.textContent = 'Asignado/Rol';
         sidebar.appendChild(assignedHeader);
+
 
         header.appendChild(sidebar);
 
@@ -318,7 +329,17 @@ class GanttChart {
             statusCol.appendChild(estadoText);
         }
 
-        // Columna 3: Assigned
+        // Columna 3: Fecha de inicio
+        const startCol = document.createElement('div');
+        startCol.className = 'gantt-status-col gantt-start-col';
+        startCol.textContent = actividad.fechaInicio;
+
+        // Columna 4: Fecha de fin
+        const endCol = document.createElement('div');
+        endCol.className = 'gantt-status-col gantt-end-col';
+        endCol.textContent = actividad.fechaFin;
+
+        // Columna 5: Assigned
         const assignedCol = document.createElement('div');
         assignedCol.className = 'gantt-assigned-col';
 
@@ -355,6 +376,8 @@ class GanttChart {
 
         sidebar.appendChild(taskNameCol);
         sidebar.appendChild(statusCol);
+        sidebar.appendChild(startCol);
+        sidebar.appendChild(endCol);
         sidebar.appendChild(assignedCol);
         row.appendChild(sidebar);
 

@@ -80,7 +80,7 @@ header h1 {
 /* Sidebar Header Container */
 .gantt-sidebar-header-container {
     display: flex;
-    width: 520px;
+    width: 760px;
     background: #f8f9fa;
     border-right: 2px solid #dee2e6;
     position: sticky;
@@ -113,6 +113,11 @@ header h1 {
     flex: 1;
     min-width: 130px;
     border-right: none;
+}
+
+.gantt-sidebar-header.fecha {
+    width: 120px;
+    flex-shrink: 0;
 }
 
 /* Timeline Header */
@@ -189,7 +194,7 @@ header h1 {
 /* Sidebar Row */
 .gantt-sidebar-row {
     display: flex;
-    width: 520px;
+    width: 760px;
     border-right: 2px solid #dee2e6;
     position: sticky;
     left: 0;
