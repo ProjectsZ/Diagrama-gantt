@@ -563,8 +563,8 @@ class GanttChart {
             // Diamond shape
             const diamond = document.createElement('div');
             diamond.className = 'gantt-milestone-diamond';
-            diamond.style.width = `${milestoneSize + 8}px`;
-            diamond.style.height = `${milestoneSize + 8}px`;
+            diamond.style.width = `${milestoneSize + 20}px`;
+            diamond.style.height = `${milestoneSize + 20}px`;
             diamond.style.backgroundColor = actividad.color;
             bar.appendChild(diamond);
 
@@ -594,6 +594,8 @@ class GanttChart {
             Inicio: ${this.dateFormat.formatDate(new Date(actividad.fechaInicio))}<br>
             Fin: ${this.dateFormat.formatDate(new Date(actividad.fechaFin))}<br>
             Progreso: ${actividad.progreso}%<br>
+            Asignado: 
+              <br> <img class="gantt-avatar gantt-tooltip-avatar" src="${actividad.avatar}" width="80" height="80" alt="${actividad.asignado}" /> ${actividad.asignado} (${actividad.rol})<br>
             ${actividad.descripcion ? `<br>${actividad.descripcion}` : ''}
         `;
         this.tooltip.classList.add('show');
