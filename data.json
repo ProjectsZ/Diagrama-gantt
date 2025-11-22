@@ -79,9 +79,9 @@
                     "fechaFin": "2025-01-14",
                     "tipo": "actividad",
                     "progreso": 50,
-                    "rol": "Juan Campos",
+                    "rol": "Project Manager",
                     "estado": "In progress",
-                    "asignado": "Juan Campos",
+                    "asignado": "Project Manager",
                     "color": "#FF9800",
                     "dependencias": [
                         "1.4"
@@ -109,10 +109,10 @@
                     "fechaFin": "2025-01-20",
                     "tipo": "actividad",
                     "progreso": 0,
-                    "rol": "Fred Pizarro",
+                    "rol": "Project Manager",
                     "estado": "Open",
                     "asignado": "Fred Pizarro",
-                    "color": "#9E9E9E",
+                    "color": "#E91E63",
                     "dependencias": [
                         "1.6"
                     ]

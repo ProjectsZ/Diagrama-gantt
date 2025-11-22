@@ -530,8 +530,8 @@ class GanttChart {
         this.tooltip.innerHTML = `
             <strong>${actividad.nombre}</strong><br>
             Rol: ${actividad.rol}<br>
-            Inicio: ${this.dateFormat.formatDate(this.dateFormat.parseLocalDate(actividad.fechaInicio))}<br>
-            Fin: ${this.dateFormat.formatDate(this.dateFormat.parseLocalDate(actividad.fechaFin))}<br>
+            Inicio: ${this.dateFormat.formatDate(new Date(actividad.fechaInicio))}<br>
+            Fin: ${this.dateFormat.formatDate(new Date(actividad.fechaFin))}<br>
             Progreso: ${actividad.progreso}%<br>
             ${actividad.descripcion ? `<br>${actividad.descripcion}` : ''}
         `;
