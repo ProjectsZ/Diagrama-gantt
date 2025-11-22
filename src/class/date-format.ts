@@ -1,4 +1,13 @@
-export class DateFormat {  
+export class DateFormat {
+
+    /**
+     * Parse a date string (YYYY-MM-DD) as a local date at midnight,
+     * avoiding timezone offset issues that occur with new Date("YYYY-MM-DD")
+     */
+    parseLocalDate(dateString: string): Date {
+        const [year, month, day] = dateString.split('-').map(Number);
+        return new Date(year, month - 1, day);
+    }
 
     getDaysBetween(start: Date, end: Date): number {
         const diffTime = Math.abs(end.getTime() - start.getTime());
