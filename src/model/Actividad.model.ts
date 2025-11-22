@@ -13,6 +13,7 @@ export interface Actividad {
     estado?: Estado; // Estado de la tarea
     asignado?: string; // Nombre del asignado
     avatar?: string; // Iniciales para avatar
+    dependencias?: string[];
 }
 
 export interface ProyectoData {

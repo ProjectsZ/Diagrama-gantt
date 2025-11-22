@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/ICONO_PS.png">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -18,11 +20,11 @@
                 <button id="resetZoom">Reset</button>
             </div>
         </header>
-        
+
         <div class="gantt-container">
             <div id="gantt-chart"></div>
         </div>
-        
+
         <div class="legend">
             <h3>Leyenda</h3>
             <div class="legend-item">
@@ -35,8 +37,15 @@
             </div>
         </div>
     </div>
-    
+
+    <script type="importmap">
+        {
+            "imports": {
+                "d3": "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+            }
+        }
+    </script>
     <script type="module" src="dist/gantt.js"></script>
 </body>
-</html>
 
+</html>

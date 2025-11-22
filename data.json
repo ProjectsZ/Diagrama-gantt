@@ -14,7 +14,7 @@
             "descripcion": "Planificación, alcance, calidad, riesgos y configuración.",
             "subactividades": [
                 {
-                    "id": "1.1",
+                    "id": "1-1",
                     "nombre": "Plan de inicio del proyecto",
                     "fechaInicio": "2025-01-01",
                     "fechaFin": "2025-01-03",
@@ -25,10 +25,12 @@
                     "asignado": "Gino Manya",
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#4CAF50",
-                    "dependencias": []
+                    "dependencias": [
+                        "1"
+                    ]
                 },
                 {
-                    "id": "1.2",
+                    "id": "1-2",
                     "nombre": "Plan de gestión del alcance",
                     "fechaInicio": "2025-01-03",
                     "fechaFin": "2025-01-06",
@@ -40,11 +42,11 @@
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#4CAF50",
                     "dependencias": [
-                        "1.1"
+                        "1-1"
                     ]
                 },
                 {
-                    "id": "1.3",
+                    "id": "1-3",
                     "nombre": "Plan de cronograma",
                     "fechaInicio": "2025-01-05",
                     "fechaFin": "2025-01-10",
@@ -56,11 +58,11 @@
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF9800",
                     "dependencias": [
-                        "1.2"
+                        "1-2"
                     ]
                 },
                 {
-                    "id": "1.4",
+                    "id": "1-4",
                     "nombre": "Plan de riesgos",
                     "fechaInicio": "2025-01-08",
                     "fechaFin": "2025-01-12",
@@ -72,11 +74,11 @@
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF9800",
                     "dependencias": [
-                        "1.3"
+                        "1-3"
                     ]
                 },
                 {
-                    "id": "1.5",
+                    "id": "1-5",
                     "nombre": "Plan de comunicaciones",
                     "fechaInicio": "2025-01-10",
                     "fechaFin": "2025-01-14",
@@ -88,11 +90,11 @@
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF9800",
                     "dependencias": [
-                        "1.4"
+                        "1-4"
                     ]
                 },
                 {
-                    "id": "1.6",
+                    "id": "1-6",
                     "nombre": "Plan de calidad",
                     "fechaInicio": "2025-01-12",
                     "fechaFin": "2025-01-17",
@@ -104,11 +106,11 @@
                     "avatar": "assets/images/avatar_sarai.png",
                     "color": "#FF9800",
                     "dependencias": [
-                        "1.5"
+                        "1-5"
                     ]
                 },
                 {
-                    "id": "1.7",
+                    "id": "1-7",
                     "nombre": "Gestión de configuración y cambios",
                     "fechaInicio": "2025-01-15",
                     "fechaFin": "2025-01-20",
@@ -120,7 +122,7 @@
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#E91E63",
                     "dependencias": [
-                        "1.6"
+                        "1-6"
                     ]
                 }
             ]
@@ -138,7 +140,7 @@
             "asignado": "Gino Manya",
             "avatar": "assets/images/avatar_Gino.png",
             "dependencias": [
-                "1.7"
+                "1-7"
             ]
         },
         {
@@ -152,7 +154,7 @@
             "descripcion": "Revisión y diagnóstico de 15 incidencias críticas.",
             "subactividades": [
                 {
-                    "id": "2.1",
+                    "id": "2-1",
                     "nombre": "Corrección INC-001",
                     "fechaInicio": "2025-01-21",
                     "fechaFin": "2025-01-22",
@@ -168,7 +170,7 @@
                     ]
                 },
                 {
-                    "id": "2.2",
+                    "id": "2-2",
                     "nombre": "Corrección INC-004",
                     "fechaInicio": "2025-01-22",
                     "fechaFin": "2025-01-23",
@@ -180,11 +182,11 @@
                     "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#4CAF50",
                     "dependencias": [
-                        "2.1"
+                        "2-1"
                     ]
                 },
                 {
-                    "id": "2.3",
+                    "id": "2-3",
                     "nombre": "Corrección INC-010",
                     "fechaInicio": "2025-01-23",
                     "fechaFin": "2025-01-24",
@@ -196,11 +198,11 @@
                     "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#4CAF50",
                     "dependencias": [
-                        "2.2"
+                        "2-2"
                     ]
                 },
                 {
-                    "id": "2.4",
+                    "id": "2-4",
                     "nombre": "Corrección crítica INC-011",
                     "fechaInicio": "2025-01-24",
                     "fechaFin": "2025-01-25",
@@ -212,11 +214,11 @@
                     "avatar": "assets/images/avatar_LuisMiguel.png",
                     "color": "#F44336",
                     "dependencias": [
-                        "2.3"
+                        "2-3"
                     ]
                 },
                 {
-                    "id": "2.5",
+                    "id": "2-5",
                     "nombre": "Corrección de seguridad INC-014",
                     "fechaInicio": "2025-01-25",
                     "fechaFin": "2025-01-26",
@@ -228,7 +230,7 @@
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF5722",
                     "dependencias": [
-                        "2.4"
+                        "2-4"
                     ]
                 }
             ]
@@ -246,7 +248,7 @@
             "asignado": "Sarai Japa",
             "avatar": "assets/images/avatar_sarai.png",
             "dependencias": [
-                "2.5"
+                "2-5"
             ]
         },
         {
@@ -263,7 +265,7 @@
             "avatar": "",
             "subactividades": [
                 {
-                    "id": "3.1",
+                    "id": "3-1",
                     "nombre": "Auditoría de dependencias",
                     "fechaInicio": "2025-01-27",
                     "fechaFin": "2025-02-15",
@@ -275,11 +277,11 @@
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF9800",
                     "dependencias": [
-                        "2.5"
+                        "2-5"
                     ]
                 },
                 {
-                    "id": "3.2",
+                    "id": "3-2",
                     "nombre": "Análisis SonarQube",
                     "fechaInicio": "2025-01-27",
                     "fechaFin": "2025-02-15",
@@ -291,11 +293,11 @@
                     "avatar": "assets/images/avatar_Danilo.png",
                     "color": "#FF9800",
                     "dependencias": [
-                        "3.1"
+                        "3-1"
                     ]
                 },
                 {
-                    "id": "3.3",
+                    "id": "3-3",
                     "nombre": "Validación BD",
                     "fechaInicio": "2025-01-27",
                     "fechaFin": "2025-02-15",
@@ -307,11 +309,11 @@
                     "avatar": "assets/images/avatar_LuisMiguel.png",
                     "color": "#FF9800",
                     "dependencias": [
-                        "3.2"
+                        "3-2"
                     ]
                 },
                 {
-                    "id": "3.4",
+                    "id": "3-4",
                     "nombre": "Validación offline",
                     "fechaInicio": "2025-01-27",
                     "fechaFin": "2025-02-15",
@@ -323,7 +325,7 @@
                     "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#FFC107",
                     "dependencias": [
-                        "3.3"
+                        "3-3"
                     ]
                 }
             ]
@@ -341,7 +343,7 @@
             "asignado": "Gino Manya",
             "avatar": "assets/images/avatar_Gino.png",
             "dependencias": [
-                "3.4"
+                "3-4"
             ]
         },
         {
@@ -355,7 +357,7 @@
             "descripcion": "Compatibilidad multiplataforma y auditoría OWASP.",
             "subactividades": [
                 {
-                    "id": "4.1",
+                    "id": "4-1",
                     "nombre": "Monitoreo frameworks",
                     "fechaInicio": "2025-02-16",
                     "fechaFin": "2025-02-20",
@@ -371,7 +373,7 @@
                     ]
                 },
                 {
-                    "id": "4.2",
+                    "id": "4-2",
                     "nombre": "Validación Android/iOS",
                     "fechaInicio": "2025-02-16",
                     "fechaFin": "2025-02-20",
@@ -383,11 +385,11 @@
                     "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
-                        "4.1"
+                        "4-1"
                     ]
                 },
                 {
-                    "id": "4.3",
+                    "id": "4-3",
                     "nombre": "Auditoría seguridad OWASP",
                     "fechaInicio": "2025-02-16",
                     "fechaFin": "2025-02-20",
@@ -399,7 +401,7 @@
                     "avatar": "assets/images/avatar_Gino.png",
                     "color": "#9E9E9E",
                     "dependencias": [
-                        "4.2"
+                        "4-2"
                     ]
                 }
             ]
@@ -417,7 +419,7 @@
             "asignado": "Sarai Japa",
             "avatar": "assets/images/avatar_sarai.png",
             "dependencias": [
-                "4.3"
+                "4-3"
             ]
         },
         {
@@ -431,7 +433,7 @@
             "descripcion": "Refactorización, modularización, Signals y mejoras de rendimiento.",
             "subactividades": [
                 {
-                    "id": "5.1",
+                    "id": "5-1",
                     "nombre": "Refactorización QuizPage",
                     "fechaInicio": "2025-02-02",
                     "fechaFin": "2025-02-18",
@@ -447,7 +449,7 @@
                     ]
                 },
                 {
-                    "id": "5.2",
+                    "id": "5-2",
                     "nombre": "Optimización rendimiento",
                     "fechaInicio": "2025-02-19",
                     "fechaFin": "2025-02-25",
@@ -459,7 +461,7 @@
                     "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#FF9800",
                     "dependencias": [
-                        "5.1"
+                        "5-1"
                     ]
                 }
             ]
@@ -477,7 +479,7 @@
             "asignado": "Fred Pizarro",
             "avatar": "assets/images/avatar_FredPizarro.jpg",
             "dependencias": [
-                "5.2"
+                "5-2"
             ]
         },
         {
@@ -491,7 +493,7 @@
             "descripcion": "Pruebas unitarias, integración, carga y UAT.",
             "subactividades": [
                 {
-                    "id": "6.1",
+                    "id": "6-1",
                     "nombre": "Pruebas unitarias",
                     "fechaInicio": "2025-02-26",
                     "fechaFin": "2025-02-28",
@@ -507,7 +509,7 @@
                     ]
                 },
                 {
-                    "id": "6.2",
+                    "id": "6-2",
                     "nombre": "Pruebas de integración",
                     "fechaInicio": "2025-02-29",
                     "fechaFin": "2025-02-30",
@@ -519,11 +521,11 @@
                     "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
-                        "6.1"
+                        "6-1"
                     ]
                 },
                 {
-                    "id": "6.3",
+                    "id": "6-3",
                     "nombre": "Pruebas de carga (5,000 usuarios)",
                     "fechaInicio": "2025-03-01",
                     "fechaFin": "2025-03-01",
@@ -535,11 +537,11 @@
                     "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
-                        "6.2"
+                        "6-2"
                     ]
                 },
                 {
-                    "id": "6.4",
+                    "id": "6-4",
                     "nombre": "Pruebas UAT",
                     "fechaInicio": "2025-03-02",
                     "fechaFin": "2025-03-02",
@@ -551,7 +553,7 @@
                     "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
-                        "6.3"
+                        "6-3"
                     ]
                 }
             ]
@@ -569,7 +571,7 @@
             "asignado": "Sarai Japa",
             "avatar": "assets/images/avatar_sarai.png",
             "dependencias": [
-                "6.4"
+                "6-4"
             ]
         },
         {
@@ -583,7 +585,7 @@
             "descripcion": "Compilación, release y despliegue en producción.",
             "subactividades": [
                 {
-                    "id": "7.1",
+                    "id": "7-1",
                     "nombre": "Build y Release",
                     "fechaInicio": "2025-03-04",
                     "fechaFin": "2025-03-04",
@@ -599,7 +601,7 @@
                     ]
                 },
                 {
-                    "id": "7.2",
+                    "id": "7-2",
                     "nombre": "Despliegue a producción",
                     "fechaInicio": "2025-03-05",
                     "fechaFin": "2025-03-05",
@@ -611,7 +613,7 @@
                     "avatar": "assets/images/avatar_Danilo.png",
                     "color": "#9E9E9E",
                     "dependencias": [
-                        "7.1"
+                        "7-1"
                     ]
                 }
             ]
@@ -629,11 +631,11 @@
             "asignado": "Danilo",
             "avatar": "assets/images/avatar_Danilo.png",
             "dependencias": [
-                "7.2"
+                "7-2"
             ]
         },
         {
-            "id": "7.3",
+            "id": "7-3",
             "nombre": "Post-mortem y cierre",
             "fechaInicio": "2025-03-06",
             "fechaFin": "2025-03-06",
@@ -661,7 +663,7 @@
             "asignado": "Gino Manya",
             "avatar": "assets/images/avatar_Gino.png",
             "dependencias": [
-                "7.3"
+                "7-3"
             ]
         }
     ]
