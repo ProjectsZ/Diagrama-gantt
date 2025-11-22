@@ -282,7 +282,7 @@ header h1 {
 
 .gantt-row[data-level="1"] .gantt-row-title,
 .gantt-row[data-level="2"] .gantt-row-title {
-    font-size: 10px;
+    font-size: 12px;
     color: #6c757d;
 }
 
@@ -478,11 +478,16 @@ header h1 {
     font-size: 12px;
 }
 
+
 .legend-color {
     width: 16px;
     height: 16px;
     border-radius: 4px;
     display: inline-block;
+}
+
+.legend-color.hito {
+    transform: rotate(45deg);
 }
 
 /* Tooltip */
