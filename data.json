@@ -12,7 +12,6 @@
             "progreso": 0,
             "color": "#667eea",
             "descripcion": "Planificación, alcance, calidad, riesgos y configuración.",
-            "rol": "Fred Pizarro",
             "subactividades": [
                 {
                     "id": "1.1",
@@ -23,7 +22,8 @@
                     "progreso": 100,
                     "rol": "Project Manager",
                     "estado": "Done",
-                    "asignado": "Project Manager",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#4CAF50",
                     "dependencias": []
                 },
@@ -36,7 +36,8 @@
                     "progreso": 100,
                     "rol": "Project Manager",
                     "estado": "Done",
-                    "asignado": "Project Manager",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#4CAF50",
                     "dependencias": [
                         "1.1"
@@ -51,7 +52,8 @@
                     "progreso": 75,
                     "rol": "Project Manager",
                     "estado": "In progress",
-                    "asignado": "Project Manager",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF9800",
                     "dependencias": [
                         "1.2"
@@ -66,7 +68,8 @@
                     "progreso": 60,
                     "rol": "Project Manager",
                     "estado": "In progress",
-                    "asignado": "Project Manager",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF9800",
                     "dependencias": [
                         "1.3"
@@ -81,7 +84,8 @@
                     "progreso": 50,
                     "rol": "Project Manager",
                     "estado": "In progress",
-                    "asignado": "Project Manager",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF9800",
                     "dependencias": [
                         "1.4"
@@ -94,9 +98,10 @@
                     "fechaFin": "2025-01-17",
                     "tipo": "actividad",
                     "progreso": 40,
-                    "rol": "QA Team",
+                    "rol": "QA",
                     "estado": "In progress",
-                    "asignado": "QA Team",
+                    "asignado": "Sarai Japa",
+                    "avatar": "assets/images/avatar_sarai.png",
                     "color": "#FF9800",
                     "dependencias": [
                         "1.5"
@@ -111,7 +116,8 @@
                     "progreso": 0,
                     "rol": "Project Manager",
                     "estado": "Open",
-                    "asignado": "Fred Pizarro",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#E91E63",
                     "dependencias": [
                         "1.6"
@@ -129,6 +135,8 @@
             "color": "#E91E63",
             "descripcion": "Aprobación formal de todos los planes de gestión.",
             "rol": "Project Manager",
+            "asignado": "Gino Manya",
+            "avatar": "assets/images/avatar_Gino.png",
             "dependencias": [
                 "1.7"
             ]
@@ -142,7 +150,6 @@
             "progreso": 0,
             "color": "#03A9F4",
             "descripcion": "Revisión y diagnóstico de 15 incidencias críticas.",
-            "rol": "QA + Dev",
             "subactividades": [
                 {
                     "id": "2.1",
@@ -153,7 +160,8 @@
                     "progreso": 100,
                     "rol": "Dev",
                     "estado": "Done",
-                    "asignado": "Dev",
+                    "asignado": "Fred Pizarro",
+                    "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#4CAF50",
                     "dependencias": [
                         "2"
@@ -168,7 +176,8 @@
                     "progreso": 100,
                     "rol": "Dev",
                     "estado": "Done",
-                    "asignado": "Dev",
+                    "asignado": "Fred Pizarro",
+                    "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#4CAF50",
                     "dependencias": [
                         "2.1"
@@ -183,7 +192,8 @@
                     "progreso": 100,
                     "rol": "Dev",
                     "estado": "Done",
-                    "asignado": "Dev",
+                    "asignado": "Fred Pizarro",
+                    "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#4CAF50",
                     "dependencias": [
                         "2.2"
@@ -198,7 +208,8 @@
                     "progreso": 100,
                     "rol": "Backend",
                     "estado": "Done",
-                    "asignado": "Backend",
+                    "asignado": "Luis Miguel",
+                    "avatar": "assets/images/avatar_LuisMiguel.png",
                     "color": "#F44336",
                     "dependencias": [
                         "2.3"
@@ -213,7 +224,8 @@
                     "progreso": 100,
                     "rol": "Security",
                     "estado": "Done",
-                    "asignado": "Security",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF5722",
                     "dependencias": [
                         "2.4"
@@ -230,7 +242,9 @@
             "progreso": 0,
             "color": "#E91E63",
             "descripcion": "Correcciones críticas aplicadas y validadas.",
-            "rol": "QA Lead",
+            "rol": "QA",
+            "asignado": "Sarai Japa",
+            "avatar": "assets/images/avatar_sarai.png",
             "dependencias": [
                 "2.5"
             ]
@@ -244,7 +258,9 @@
             "color": "#00BCD4",
             "progreso": 0,
             "descripcion": "Auditorías de dependencias, SonarQube, BD y offline.",
-            "rol": "Security / DevOps / DBA",
+            "rol": "",
+            "asignado": "",
+            "avatar": "",
             "subactividades": [
                 {
                     "id": "3.1",
@@ -255,7 +271,8 @@
                     "progreso": 50,
                     "rol": "Security",
                     "estado": "In progress",
-                    "asignado": "Security",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#FF9800",
                     "dependencias": [
                         "2.5"
@@ -270,7 +287,8 @@
                     "progreso": 40,
                     "rol": "DevOps",
                     "estado": "In progress",
-                    "asignado": "DevOps",
+                    "asignado": "Danilo",
+                    "avatar": "assets/images/avatar_Danilo.png",
                     "color": "#FF9800",
                     "dependencias": [
                         "3.1"
@@ -283,9 +301,10 @@
                     "fechaFin": "2025-02-15",
                     "tipo": "actividad",
                     "progreso": 40,
-                    "rol": "DBA",
+                    "rol": "Backend",
                     "estado": "In progress",
-                    "asignado": "DBA",
+                    "asignado": "Luis Miguel",
+                    "avatar": "assets/images/avatar_LuisMiguel.png",
                     "color": "#FF9800",
                     "dependencias": [
                         "3.2"
@@ -300,7 +319,8 @@
                     "progreso": 30,
                     "rol": "Dev",
                     "estado": "In progress",
-                    "asignado": "Dev",
+                    "asignado": "Fred Pizarro",
+                    "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#FFC107",
                     "dependencias": [
                         "3.3"
@@ -317,7 +337,9 @@
             "progreso": 0,
             "color": "#E91E63",
             "descripcion": "Escaneo de seguridad y calidad del código completados.",
-            "rol": "Security Lead",
+            "rol": "Security",
+            "asignado": "Gino Manya",
+            "avatar": "assets/images/avatar_Gino.png",
             "dependencias": [
                 "3.4"
             ]
@@ -331,7 +353,6 @@
             "color": "#4CAF50",
             "progreso": 0,
             "descripcion": "Compatibilidad multiplataforma y auditoría OWASP.",
-            "rol": "DevOps / QA / Security",
             "subactividades": [
                 {
                     "id": "4.1",
@@ -342,7 +363,8 @@
                     "progreso": 0,
                     "rol": "DevOps",
                     "estado": "Open",
-                    "asignado": "DevOps",
+                    "asignado": "Danilo",
+                    "avatar": "assets/images/avatar_Danilo.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "H3"
@@ -357,7 +379,8 @@
                     "progreso": 0,
                     "rol": "QA",
                     "estado": "Open",
-                    "asignado": "QA",
+                    "asignado": "Sarai Japa",
+                    "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "4.1"
@@ -372,7 +395,8 @@
                     "progreso": 0,
                     "rol": "Security",
                     "estado": "Open",
-                    "asignado": "Security",
+                    "asignado": "Gino Manya",
+                    "avatar": "assets/images/avatar_Gino.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "4.2"
@@ -389,7 +413,9 @@
             "progreso": 0,
             "color": "#E91E63",
             "descripcion": "Compatibilidad multiplataforma validada.",
-            "rol": "QA Lead",
+            "rol": "QA",
+            "asignado": "Sarai Japa",
+            "avatar": "assets/images/avatar_sarai.png",
             "dependencias": [
                 "4.3"
             ]
@@ -402,7 +428,6 @@
             "tipo": "actividad",
             "color": "#8E24AA",
             "progreso": 0,
-            "rol": "Dev",
             "descripcion": "Refactorización, modularización, Signals y mejoras de rendimiento.",
             "subactividades": [
                 {
@@ -414,7 +439,8 @@
                     "tipo": "actividad",
                     "rol": "Dev",
                     "estado": "Done",
-                    "asignado": "Dev",
+                    "asignado": "Fred Pizarro",
+                    "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#4CAF50",
                     "dependencias": [
                         "H4"
@@ -427,9 +453,10 @@
                     "fechaFin": "2025-02-25",
                     "progreso": 80,
                     "tipo": "actividad",
-                    "rol": "Dev + QA",
+                    "rol": "Dev",
                     "estado": "In progress",
-                    "asignado": "Dev + QA",
+                    "asignado": "Fred Pizarro",
+                    "avatar": "assets/images/avatar_FredPizarro.jpg",
                     "color": "#FF9800",
                     "dependencias": [
                         "5.1"
@@ -446,7 +473,9 @@
             "progreso": 0,
             "color": "#E91E63",
             "descripcion": "Arquitectura refactorizada y optimizada.",
-            "rol": "Tech Lead",
+            "rol": "Dev",
+            "asignado": "Fred Pizarro",
+            "avatar": "assets/images/avatar_FredPizarro.jpg",
             "dependencias": [
                 "5.2"
             ]
@@ -459,7 +488,6 @@
             "tipo": "actividad",
             "color": "#009688",
             "progreso": 0,
-            "rol": "QA",
             "descripcion": "Pruebas unitarias, integración, carga y UAT.",
             "subactividades": [
                 {
@@ -471,7 +499,8 @@
                     "progreso": 0,
                     "rol": "QA",
                     "estado": "Open",
-                    "asignado": "QA",
+                    "asignado": "Sarai Japa",
+                    "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "H5"
@@ -486,7 +515,8 @@
                     "progreso": 0,
                     "rol": "QA",
                     "estado": "Open",
-                    "asignado": "QA",
+                    "asignado": "Sarai Japa",
+                    "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "6.1"
@@ -501,7 +531,8 @@
                     "progreso": 0,
                     "rol": "QA",
                     "estado": "Open",
-                    "asignado": "QA",
+                    "asignado": "Sarai Japa",
+                    "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "6.2"
@@ -514,9 +545,10 @@
                     "fechaFin": "2025-03-02",
                     "tipo": "actividad",
                     "progreso": 0,
-                    "rol": "Usuario final",
+                    "rol": "QA",
                     "estado": "Open",
-                    "asignado": "Usuario final",
+                    "asignado": "Sarai Japa",
+                    "avatar": "assets/images/avatar_sarai.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "6.3"
@@ -533,7 +565,9 @@
             "progreso": 0,
             "color": "#E91E63",
             "descripcion": "El usuario final aprueba UAT.",
-            "rol": "PM",
+            "rol": "QA",
+            "asignado": "Sarai Japa",
+            "avatar": "assets/images/avatar_sarai.png",
             "dependencias": [
                 "6.4"
             ]
@@ -546,7 +580,6 @@
             "tipo": "actividad",
             "color": "#2196F3",
             "progreso": 0,
-            "rol": "DevOps",
             "descripcion": "Compilación, release y despliegue en producción.",
             "subactividades": [
                 {
@@ -558,7 +591,8 @@
                     "progreso": 0,
                     "rol": "DevOps",
                     "estado": "Open",
-                    "asignado": "DevOps",
+                    "asignado": "Danilo",
+                    "avatar": "assets/images/avatar_Danilo.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "H6"
@@ -573,7 +607,8 @@
                     "progreso": 0,
                     "rol": "DevOps",
                     "estado": "Open",
-                    "asignado": "DevOps",
+                    "asignado": "Danilo",
+                    "avatar": "assets/images/avatar_Danilo.png",
                     "color": "#9E9E9E",
                     "dependencias": [
                         "7.1"
@@ -590,7 +625,9 @@
             "progreso": 0,
             "color": "#E91E63",
             "descripcion": "Plataforma en producción estable.",
-            "rol": "PM / DevOps",
+            "rol": "DevOps",
+            "asignado": "Danilo",
+            "avatar": "assets/images/avatar_Danilo.png",
             "dependencias": [
                 "7.2"
             ]
@@ -604,9 +641,9 @@
             "progreso": 0,
             "color": "#795548",
             "descripcion": "Lecciones aprendidas, incidentes y estado final del proyecto.",
-            "rol": "PM",
-            "estado": "Open",
-            "asignado": "PM",
+            "rol": "Project Manager",
+            "asignado": "Gino Manya",
+            "avatar": "assets/images/avatar_Gino.png",
             "dependencias": [
                 "H7"
             ]
@@ -620,7 +657,9 @@
             "progreso": 0,
             "color": "#E91E63",
             "descripcion": "Proyecto completado oficialmente.",
-            "rol": "PM",
+            "rol": "Project Manager",
+            "asignado": "Gino Manya",
+            "avatar": "assets/images/avatar_Gino.png",
             "dependencias": [
                 "7.3"
             ]

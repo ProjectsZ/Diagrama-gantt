@@ -220,14 +220,29 @@ class GanttChart {
         return name.substring(0, 2).toUpperCase();
     }
 
-    private createAvatar(name: string, initials?: string): HTMLElement {
+    private createAvatar(name: string, avatarUrl?: string): HTMLElement {
         const avatar = document.createElement('div');
         avatar.className = 'gantt-avatar';
-        avatar.textContent = initials || this.getInitials(name);
-        // Color basado en el nombre
-        const colors = ['#667eea', '#f093fb', '#4facfe', '#43e97b', '#fa709a', '#fee140', '#30cfd0'];
-        const index = name.charCodeAt(0) % colors.length;
-        avatar.style.backgroundColor = colors[index];
+
+        if (avatarUrl && avatarUrl.trim() !== '') {
+            // Usar imagen de avatar
+            const img = document.createElement('img');
+            img.src = avatarUrl;
+            img.alt = name;
+            img.style.width = '100%';
+            img.style.height = '100%';
+            img.style.objectFit = 'cover';
+            img.style.borderRadius = '50%';
+            avatar.appendChild(img);
+        } else {
+            // Usar iniciales como fallback
+            avatar.textContent = this.getInitials(name);
+            // Color basado en el nombre
+            const colors = ['#667eea', '#f093fb', '#4facfe', '#43e97b', '#fa709a', '#fee140', '#30cfd0'];
+            const index = name.charCodeAt(0) % colors.length;
+            avatar.style.backgroundColor = colors[index];
+        }
+
         return avatar;
     }
 
@@ -306,13 +321,36 @@ class GanttChart {
         // Columna 3: Assigned
         const assignedCol = document.createElement('div');
         assignedCol.className = 'gantt-assigned-col';
-        const assignedName = actividad.asignado || actividad.rol;
-        if (assignedName && assignedName.trim() !== '' && !isParentExpanded) {
-            const avatar = this.createAvatar(assignedName, actividad.avatar);
+
+        // Mostrar avatar y rol/asignado
+        if (actividad.rol || actividad.asignado) {
+            // Usar el asignado para el avatar, o el rol si no hay asignado
+            const avatarName = actividad.asignado || actividad.rol;
+            const avatar = this.createAvatar(avatarName, actividad.avatar);
             assignedCol.appendChild(avatar);
-            const nameSpan = document.createElement('span');
-            nameSpan.textContent = assignedName;
-            assignedCol.appendChild(nameSpan);
+
+            // Crear contenedor flex column para los spans
+            const textContainer = document.createElement('div');
+            textContainer.style.display = 'flex';
+            textContainer.style.flexDirection = 'column';
+            textContainer.style.gap = '2px';
+
+            // Mostrar rol si existe
+            if (actividad.rol && actividad.rol.trim() !== '') {
+                const rolSpan = document.createElement('span');
+                rolSpan.textContent = actividad.rol;
+                rolSpan.style.fontWeight = 'bold';
+                textContainer.appendChild(rolSpan);
+            }
+
+            // Mostrar nombre asignado si existe y es diferente del rol
+            if (actividad.asignado && actividad.asignado.trim() !== '' && actividad.asignado !== actividad.rol) {
+                const nameSpan = document.createElement('span');
+                nameSpan.textContent = actividad.asignado;
+                textContainer.appendChild(nameSpan);
+            }
+
+            assignedCol.appendChild(textContainer);
         }
 
         sidebar.appendChild(taskNameCol);
